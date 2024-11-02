@@ -1,5 +1,5 @@
-
 <html lang="ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,7 @@
             padding: 30px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
             max-width: 600px;
-            width: 100%;
+            width: 90%; /* جعل عرض النموذج 90% ليتناسب مع الشاشات الصغيرة */
             margin: 20px auto;
             display: none; /* إخفاء النموذج بشكل افتراضي */
         }
@@ -98,8 +98,54 @@
             font-size: 1em;
             color: #333; /* لون النص في الفوتر */
         }
+
+        /* تحسينات للوسائط */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* تقليل حجم العنوان للشاشات الصغيرة */
+            }
+
+            .form-container {
+                padding: 20px; /* تقليل padding في النموذج */
+            }
+
+            .submit-button,
+            .start-button {
+                padding: 10px 20px; /* تقليل padding للأزرار */
+                font-size: 1em; /* تقليل حجم الخط للأزرار */
+            }
+
+            .logo {
+                width: 120px; /* تقليل عرض الشعار */
+            }
+
+            .footer-logo {
+                width: 80px; /* تقليل عرض الشعار السفلي */
+            }
+
+            iframe {
+                height: 500px; /* تقليل ارتفاع الإطار */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em; /* حجم خط أصغر للشاشات الصغيرة جداً */
+            }
+
+            .form-container {
+                width: 95%; /* جعل عرض النموذج أكبر قليلاً */
+            }
+
+            .submit-button,
+            .start-button {
+                padding: 8px 15px; /* تقليل padding أكثر للأزرار */
+                font-size: 0.9em; /* تقليل حجم الخط للأزرار */
+            }
+        }
     </style>
 </head>
+
 <body>
     <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/logo%20(2).png" alt="شعار الجامعة" class="logo"> <!-- الشعار العلوي -->
     <h1>بوابة السفراء جامعة آل البيت</h1>
@@ -125,4 +171,5 @@
         }
     </script>
 </body>
+
 </html>
