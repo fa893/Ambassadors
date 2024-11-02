@@ -8,21 +8,21 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #45a247, #283c86); /* الألوان المستوحاة من منصة نحن */
+            background-color: white; /* جعل الخلفية بيضاء */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            color: white;
+            color: #333; /* لون النص */
             text-align: center;
         }
 
         h1 {
             margin-bottom: 20px;
             font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #45a247; /* لون العنوان */
         }
 
         .form-container {
@@ -32,7 +32,7 @@
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
             max-width: 600px;
             width: 100%;
-            margin: 0 auto;
+            margin: 20px auto;
             display: none; /* إخفاء النموذج بشكل افتراضي */
         }
 
@@ -69,8 +69,8 @@
         }
 
         .start-button {
-            background-color: #ffffff;
-            color: #45a247; /* لون الزر */
+            background-color: #45a247; /* لون زر البداية */
+            color: white;
             border: none;
             border-radius: 5px;
             padding: 15px 25px;
@@ -80,7 +80,7 @@
         }
 
         .start-button:hover {
-            background-color: #e0e0e0;
+            background-color: #388e3c;
         }
 
         .logo {
@@ -91,6 +91,12 @@
         .footer-logo {
             width: 100px; /* تحديد عرض الشعار السفلي */
             margin-top: 20px; /* مسافة فوق الشعار السفلي */
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #333; /* لون النص في الفوتر */
         }
     </style>
 </head>
@@ -106,6 +112,8 @@
     </div>
 
     <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/22%20(3).png" alt="شعار إضافي" class="footer-logo"> <!-- الشعار السفلي -->
+
+    <p class="footer-text">تم تصميم هذه البوابة من قبل المهندس فرحان الخوالدة</p> <!-- نص الفوتر -->
 
     <script>
         function showForm() {
