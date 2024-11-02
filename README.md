@@ -90,9 +90,9 @@
         }
 
         .logo {
-            max-width: 10px; /* تحديد العرض الأقصى للشعار */
+            max-width: 150px; /* تحديد العرض الأقصى للشعار */
             height: auto; /* الحفاظ على نسبة العرض إلى الطول */
-            margin: 0 10px; /* مسافة بين الشعارين */
+            margin: 0 20px; /* مسافة بين الشعارين */
         }
 
         .footer-text {
@@ -118,7 +118,7 @@
             }
 
             .logo {
-                max-width: 150px; /* تقليل عرض الشعار على الشاشات الصغيرة */
+                max-width: 120px; /* تقليل عرض الشعار على الشاشات الصغيرة */
             }
         }
 
@@ -152,7 +152,7 @@
 
     <div class="logos-container"> <!-- حاوية الشعارين -->
         <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/logo%20(2).png" alt="شعار الجامعة" class="logo"> <!-- الشعار العلوي -->
-        <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/22%20(3).png" alt="شعار إضافي" class="logo"> <!-- الشعار السفلي -->
+        <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/22%20(3).png" alt="شعار إضافي" class="logo"> <!-- الشعار الإضافي -->
     </div>
 
     <p class="footer-text">تم تصميم هذه البوابة من قبل المهندس فرحان الخوالدة</p> <!-- نص الفوتر -->
