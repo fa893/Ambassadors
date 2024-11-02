@@ -164,7 +164,7 @@
         }
 
         function submitForm() {
-            window.location.href = "https://fa893.github.io/Volunteer-Ambassadors/"; // الانتقال للموقع بعد الضغط على "إرسال"
+            window.location.href = "[https://fa893.github.io/nahno---Al-al-Bayt-University-/]"; // الانتقال للموقع بعد الضغط على "إرسال"
         }
     </script>
 </body>
