@@ -83,14 +83,16 @@
             background-color: #388e3c;
         }
 
-        .logo {
-            width: 150px; /* تحديد عرض الشعار */
-            margin-bottom: 20px; /* مسافة تحت الشعار */
+        .logos-container {
+            display: flex; /* استخدام Flexbox لتنسيق الشعارين */
+            justify-content: center; /* مركز الشعارين */
+            margin-top: 20px; /* مسافة فوق الشعارين */
         }
 
-        .footer-logo {
-            width: 100px; /* تحديد عرض الشعار السفلي */
-            margin-top: 20px; /* مسافة فوق الشعار السفلي */
+        .logo {
+            max-width: 10px; /* تحديد العرض الأقصى للشعار */
+            height: auto; /* الحفاظ على نسبة العرض إلى الطول */
+            margin: 0 10px; /* مسافة بين الشعارين */
         }
 
         .footer-text {
@@ -116,15 +118,7 @@
             }
 
             .logo {
-                width: 120px; /* تقليل عرض الشعار */
-            }
-
-            .footer-logo {
-                width: 80px; /* تقليل عرض الشعار السفلي */
-            }
-
-            iframe {
-                height: 500px; /* تقليل ارتفاع الإطار */
+                max-width: 150px; /* تقليل عرض الشعار على الشاشات الصغيرة */
             }
         }
 
@@ -147,8 +141,7 @@
 </head>
 
 <body>
-    <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/logo%20(2).png" alt="شعار الجامعة" class="logo"> <!-- الشعار العلوي -->
-    <h1>بوابة السفراء جامعة آل البيت</h1>
+    <h1>بوابة سفراء نحن جامعة آل البيت</h1>
     <button class="start-button" onclick="showForm()">ابدأ الدخول للبوابة</button> <!-- زر لبدء التعبئة -->
 
     <div class="form-container" id="formContainer"> <!-- إضافة id للنموذج -->
@@ -157,7 +150,10 @@
         <button class="submit-button" onclick="submitForm()">الدخول</button>
     </div>
 
-    <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/22%20(3).png" alt="شعار إضافي" class="footer-logo"> <!-- الشعار السفلي -->
+    <div class="logos-container"> <!-- حاوية الشعارين -->
+        <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/logo%20(2).png" alt="شعار الجامعة" class="logo"> <!-- الشعار العلوي -->
+        <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/22%20(3).png" alt="شعار إضافي" class="logo"> <!-- الشعار السفلي -->
+    </div>
 
     <p class="footer-text">تم تصميم هذه البوابة من قبل المهندس فرحان الخوالدة</p> <!-- نص الفوتر -->
 
