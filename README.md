@@ -86,13 +86,13 @@
         .logos-container {
             display: flex; /* استخدام Flexbox لتنسيق الشعارين */
             justify-content: center; /* مركز الشعارين */
-            margin-top: 20px; /* مسافة فوق الشعارين */
+            margin-bottom: 20px; /* مسافة تحت الشعارين */
         }
 
         .logo {
             max-width: 150px; /* تحديد العرض الأقصى للشعار */
             height: auto; /* الحفاظ على نسبة العرض إلى الطول */
-            margin: 0 20px; /* مسافة بين الشعارين */
+            margin: 0 10px; /* مسافة بين الشعارين */
         }
 
         .footer-text {
@@ -118,7 +118,7 @@
             }
 
             .logo {
-                max-width: 120px; /* تقليل عرض الشعار على الشاشات الصغيرة */
+                max-width: 100px; /* تقليل عرض الشعار على الشاشات الصغيرة */
             }
         }
 
@@ -141,18 +141,19 @@
 </head>
 
 <body>
+    <div class="logos-container"> <!-- حاوية الشعارين -->
+        <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/22%20(3).png" alt="شعار إضافي" class="logo"> <!-- الشعار الأول -->
+        <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/logo%20(2).png" alt="شعار الجامعة" class="logo"> <!-- الشعار الثاني -->
+    </div>
+
     <h1>بوابة سفراء نحن جامعة آل البيت</h1>
+
     <button class="start-button" onclick="showForm()">ابدأ الدخول للبوابة</button> <!-- زر لبدء التعبئة -->
 
     <div class="form-container" id="formContainer"> <!-- إضافة id للنموذج -->
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVfhqYoq_YsgKPmuGJ2LIOSIhRC46UH8aWsKDEUlvofo7qqw/viewform?embedded=true" frameborder="0">جارٍ التحميل…</iframe>
         <p class="note">ملاحظة: سيتم الدخول بعد إكمال تعبئة البيانات.</p>
         <button class="submit-button" onclick="submitForm()">الدخول</button>
-    </div>
-
-    <div class="logos-container"> <!-- حاوية الشعارين -->
-        <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/logo%20(2).png" alt="شعار الجامعة" class="logo"> <!-- الشعار العلوي -->
-        <img src="https://assets.onecompiler.app/42wttk5ev/42wttjqj4/22%20(3).png" alt="شعار إضافي" class="logo"> <!-- الشعار الإضافي -->
     </div>
 
     <p class="footer-text">تم تصميم هذه البوابة من قبل المهندس فرحان الخوالدة</p> <!-- نص الفوتر -->
